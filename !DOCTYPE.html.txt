@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Portal UAD</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(#800080, #660066);
+            background-image: url("bg_image.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            position: relative;
+            z-index: 1;
+        }
+
+        form h2 {
+            text-align: center;
+            color: #800080;
+            margin-bottom: 30px;
+        }
+
+        form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            background-color: #f5f5f5;
+            width: 300px;
+        }
+
+        form label {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        form button {
+            background: linear-gradient(#800080, #660066);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Login Portal</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" class="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" class="password" name="password" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" class="input" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" class="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" class="address" name="address" rows="4" cols="30" required></textarea>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" class="bio" name="bio" rows="4" cols="30" required></textarea>
+
+        <button type="submit" id="login" class="submit" value="Submit">Login</button>
+    </form>
+</body>
+</html>
